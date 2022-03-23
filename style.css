@@ -3,38 +3,71 @@
 }
 
 body {
-    color: white;
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    background-color: rgba(0, 71, 44, 0.603);
+    margin: 0;
+    height: 100vh;
 }
 
 .container {
     width: 700px;
-    height: 300px;
+    height: 400px;
     margin: auto;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 
     display: flex;
     flex-direction: column;
-    background-color: rgb(252, 149, 10);
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
 }
 
 h1 {
     font-weight: lighter;
-    margin: 20px;
+    font-size: 2rem;
+    margin: 5px;
 }
 
-.buttons {
+p {
+    font-size: 1.8rem;
+}
+
+button {
     width: 150px;
     margin: 5px;
+    margin-bottom: 20px;
     padding: 10px 30px;
     
-    background-color: transparent;
-    border: 1px solid white;
+    background-color: rgba(0, 37, 23, 0.603);
+    border: 2px solid white;
     color: white;
     box-shadow: none;
     border-radius: 4px;
 
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
+}
+
+#tenths, #tenths-colon {
+    color: rgba(0, 37, 23, 0.603);;
+}
+
+button.active, button.pauseActive  {
+    opacity: 0.8;
     font-weight: bold;
 }
